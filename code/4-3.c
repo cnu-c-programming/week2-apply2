@@ -1,22 +1,22 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, isPrime = 1;
+    int n, prime = 1;
 
     scanf("%d", &n);
 
     if (n <= 1) {
-        isPrime = 0;
+        prime = 0;
     } else {
-        for (i = 2; i < n; i++) {
+        for (int i = 2; i < n; i++) {
             if (n % i == 0) {
-                isPrime = 0;
+                prime = 0;
                 break;
             }
         }
     }
 
-    if (isPrime) {
+    if (prime) {
         printf("true\n");
     } else {
         printf("false\n");
